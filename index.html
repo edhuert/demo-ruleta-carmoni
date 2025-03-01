@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta de Descuentos - Nueces</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+             Carmoni Nueces Confitadas
+        </h1>
+        <div class="logo">🌰</div>
+        <h1>Ruleta de Descuentos</h1>
+        <p>¡Gira la ruleta y obtén descuentos exclusivos para nuestras nueces!</p>
+    </header>
+    
+    <div class="container">
+        <div class="form-container" id="formContainer">
+            <h2>Ingresa tus datos para jugar</h2>
+            <form id="playerForm">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Apellido:</label>
+                    <input type="text" id="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <button type="submit" id="submitBtn">¡Quiero jugar!</button>
+            </form>
+        </div>
+        
+        <div class="game-container" id="gameContainer">
+            <h2>¡Gira la ruleta para obtener tu descuento!</h2>
+            <div class="wheel-container">
+                <div class="pointer"></div>
+                <div class="wheel" id="wheel"></div>
+            </div>
+            <button id="spinButton">¡Girar Ruleta!</button>
+            
+            <div class="result-container" id="resultContainer">
+                <div class="result-title" id="resultTitle"></div>
+                <p id="resultMessage"></p>
+                <div class="discount-code" id="discountCode"></div>
+                <p>Presenta este código en tu próxima compra para aplicar el descuento.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 - Carmoni Nueces Confitadas. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
